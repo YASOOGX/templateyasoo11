@@ -1136,6 +1136,11 @@ display: none;
     margin-right: 20px;
     transition: 1s all;
   }
+  .links-head li {
+  margin: 0 5px;
+  position: relative;
+  cursor: pointer;
+}
   .page-search input{
     width: 100%;
   margin-right: 15%;
