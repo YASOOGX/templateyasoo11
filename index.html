@@ -36,21 +36,21 @@
         <div class=" page-phone col-lg-8 col-md-8 col-12  m-auto ">
           <div class="fixed-links  links d-flex  justify-content-center align-items-center m-auto">
             <ul class=" links-head d-flex justify-content-center  m-auto">
-              <li><a href="#">أخر الاخبار</a></li>
+              <li><a href="#news">أخر الاخبار</a></li>
               <li><a href="#">أحداث هامة</a></li>
-              <li><a href="#">الحياة الجامعية</a></li>
-              <li><a href="#">خدمة المجتمع</a></li>
-              <li><a href="#">وحدات التطوير</a></li>
-              <li><a href="#">البحث العلمي</a></li>
-              <li><a href="#">عن الكلية</a></li>
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">المزيد</a>
-              <ul  class="dropdown-menu">
-                <li class="dropdown-item" >الطلاب</li>
-                <li class="dropdown-item">الدراسات العليا</li>
-                <li class="dropdown-item">الوافدين</li>
-                <li class="dropdown-item"> الخريجين</li>
-                <li class="dropdown-item">القبول والتسجيل</li>
-              </ul>
+              <li><a href="#life">الحياة الجامعية</a></li>
+              <li><a href="#ser">خدمة المجتمع</a></li>
+              <li><a href="#update">وحدات التطوير</a></li>
+              <li><a href="#search">البحث العلمي</a></li>
+              <li><a href="#who">عن الكلية</a></li>
+              <li class="dropdown"><a href="#" id="dropmore" class="dropdown-toggle" data-toggle="dropdown">المزيد</a>
+                <ul  class="dropdown-menu" aria-labelledby="dropmore">
+                  <li class="dropdown-item" >الطلاب</li>
+                  <li class="dropdown-item">الدراسات العليا</li>
+                  <li class="dropdown-item">الوافدين</li>
+                  <li class="dropdown-item"> الخريجين</li>
+                  <li class="dropdown-item">القبول والتسجيل</li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -374,18 +374,17 @@
   </div>
   <!-- end landing -->
   <!-- start part news  -->
-  <div class="pop ">
+  <div class="pop  "  >
     <div class="container ">
-      <div class="row row-cols-2">
+      <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1">
         <div class="col pop-text">
-
         </div>
         <div class="col pop-image">
         </div>
       </div>
     </div>
   </div>
-  <div class="news mb-5 " data-aos="fade-up">
+  <div class="news mb-5 " id="news" data-aos="fade-up" data-aos-duration="1000">
     <div class="container ">
       <div class="title-section">
         <h2 class="text-center"> احدث الاخبار</h2>
@@ -492,11 +491,11 @@
   <!-- start part amid  -->
   <div class="amid mb-5">
     <div class="container">
-      <div class="title-section" data-aos="fade-up">
+      <div class="title-section" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="text-center"> عميد الكليه</h2>
       </div>
       <div class=" row row-cols-lg-2 row-cols-md-1 row-cols-1">
-        <div class="col right mt-30-px" data-aos="fade-up-left">
+        <div class="col right mt-30-px" data-aos="fade-up-left" data-aos-duration="1000">
           <p class="auto  h-20-px mb-20-px"></p>
           <h2>أفضل بيئة تعليمية وبحثية مُحفزة لأبنائها</h2>
           <p>تحرص كلية التربية الرياضية – أبوقير بجامعة الإسكندرية على توفير أفضل بيئة تعليمية وبحثية مُحفزة لأبنائها
@@ -507,7 +506,7 @@
             رؤية طموحة في إحداث تغيرات جذرية لمواكبة معايير التميز العالمية وأفضل الممارسات العلمية.</p>
           <p>دكتور محمد بلال</p>
         </div>
-        <div class="col left"  data-aos="fade-up-left">
+        <div class="col left aos-phone"  data-aos="fade-up-right" data-aos-duration="1000">
           <img src="assets/image/amid.png" alt="erorr">
         </div>
       </div>
@@ -516,7 +515,7 @@
   <!-- end part amid   -->
   <!-- //////////////////////////////// -->
   <!-- start life faculty -->
-  <div class="life-facut mb-5 " data-aos="fade-left">
+  <div class="life-facut mb-5 "  id="life" data-aos="fade-left" data-aos-duration="1000">
     <div class="container ">
       <div class="title-section">
         <h2 class="text-center"> الحياة الجامعية</h2>
@@ -589,7 +588,7 @@
   <!-- end life faculty -->
   <!-- /////////////////////////////////////// -->
   <!-- start numbers -->
-  <div class="numbers bg-ground mb-5" data-aos="fade-up">
+  <div class="numbers bg-ground mb-5" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <div class="title-section">
         <h2 class="text-center"> جميع اعضاء هيئه التدريس و الطلاب</h2>
@@ -622,7 +621,7 @@
   <!-- end numbers   -->
   <!-- ////////////////////////////////////// -->
   <!-- start  service couminty  -->
-  <div class="services mb-80-px" data-aos="zoom-in-left">
+  <div class="services mb-80-px aos-phone" id="ser" data-aos="zoom-in-right" data-aos-duration="1000">
     <div class="container">
       <div class="title-section ">
         <h2 class="text-center"> خدمة المجتمع</h2>
@@ -674,13 +673,13 @@
   <!-- end service couminty  -->
   <!-- /////////////////////////////////// -->
   <!-- statrt update -->
-  <div class="update mb-5">
+  <div class="update mb-5" id="update">
     <div class="container">
-      <div class="title-section " data-aos="fade-down">
+      <div class="title-section " data-aos="fade-down" data-aos-duration="1000">
         <h2 class="text-center"> وحده التطور</h2>
       </div>
       <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1">
-        <div class="test col right" data-aos="zoom-in-left" >
+        <div class="test col right" data-aos="zoom-in-left" data-aos-duration="1000" >
           <h2 class="mb-4">اختر الوحده التي تريدها:</h2>
         <div class="d-flex align-items-start justify-content-center flex-lg-column flex-md-column flex-row">
           <div class="text-update text-active">
@@ -695,7 +694,7 @@
         </div>
         </div>
 
-        <div class="col left" data-aos="zoom-in-left">
+        <div class="col left aos-phone" data-aos="zoom-in-right">
           <div class="image-update update-active ">
               <div class="slider-for">
                 <img src="assets/image/inv.jpg" alt="erorr">
@@ -755,7 +754,7 @@
   </div>
     <!-- end update -->
     <!-- start numbers 2  -->
-    <div class="numbers bg-ground bg-ground2 mb-5" data-aos="fade-up">
+    <div class="numbers bg-ground bg-ground2 mb-5" data-aos="fade-up" data-aos-duration="1000">
       <div class="container">
         <div class="title-section">
           <h2 class="text-center"> تفاصيل عن الكليه</h2>
@@ -787,7 +786,7 @@
     <!-- end  numbers 2  -->
     <!-- ///////////////////////////////////////// -->
     <!-- start research -->
-    <div class="research mb-5" data-aos="fade-left">
+    <div class="research mb-5" id="search" data-aos="fade-left" data-aos-duration="1000">
 <div class="container">
   <div class="title-section mb-5 ">
     <h2 class="text-center"> البحث العلمى</h2>
@@ -831,19 +830,19 @@
 <!-- end research  -->
 <!-- //////////////////////// -->
 <!-- start who us -->
-<div class="who-us mb-5">
+<div class="who-us mb-5" id="who">
 <div class="container">
-  <div class="title-section mb-5" data-aos="fade-down">
+  <div class="title-section mb-5" data-aos="fade-down" data-aos-duration="1000">
     <h2 class="text-center"> من نحن</h2>
   </div>
 <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1">
-<div class="col right" data-aos="fade-left">
+<div class="col right" data-aos="fade-left" data-aos-duration="1000">
   <h5 class="mb-5">
     تعتبر كلية التربية الرياضية للبنين بأبى قير من المؤسسات التعليمية الرائدة فى مجال التربية الرياضية بجمهورية مصر العربية ، حيث أسهمت لما يقرب من خمسين عاما فى النهوض بالعملية التربوية والتعليمية من خلال اعداد الكوادر المؤهله المتميزة التى حملت على أكتافها عبء تربية وتعليم وتدريب أجيال متعاقبه من أبناء هذا الوطن العزيز ، الذين كان للنشاط الرياضى دورة البارز فى تشكيل شخصياتهم وغرس المبادئ الرياضية النبيلة فى نفوسهم ، كما كانت لهذه المؤسسه العلمية العريقة بصمتها الواضحه فى تطور حركه البحث العلمى الجاد الذى حمل لواء علماء اجلاء تشرف بهم هذه الكلية وتدين لهم بالفضل أجيال من طلاب العلم والباحثين فى مصر والدول العربية الشقيقة
   </h5>
   <button class="btn btn-primary">المزيد من التفاصيل</button>
 </div>
-<div class="col left" data-aos="fade-left">
+<div class="col left aos-phone" data-aos="fade-right">
   <div class="image mb-5"><img class="img-fluid" src="assets/image/endlogo.webp" alt="erorr"></div>
   <button class="btn-special " > الاقسام <i class="fa-solid fa-angle-double-down"></i></button>
   <div class="special">
@@ -864,7 +863,7 @@
 <!-- end who us -->
 <!-- ///////////////////// -->
 <!-- start review -->
-<div class="review mb-5"  data-aos="fade-up">
+<div class="review mb-5"  data-aos="fade-up" data-aos-duration="1000">
 <div class="container">
   <div class="title-section mb-5 ">
     <h2 class="text-center"> الرسائل</h2>
@@ -880,7 +879,7 @@
 <!-- end review -->
 <!-- ////////////////////// -->
 <!-- start footer -->
-<footer class="py-3">
+<footer class="py-3" data-aos="fade-up" data-aos-duration="1000">
   <div class="container">
 <div class="end d-flex justify-content-between align-items-center">
 <div><img src="assets/image/Logo.png" alt=""></div>
@@ -898,6 +897,9 @@
   <button class="btn btn-dark rounded-circle dark-mode" style="transition: 1s all;"><i class="fa-solid fa-moon"></i> </button>
 <button class="btn btn-primary rounded-circle "><i class="fa-solid fa-phone"></i> </button>
 </div>
+
+
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/jquery-3.7.0.min.js"></script>
