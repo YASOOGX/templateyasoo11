@@ -1,4 +1,9 @@
-
+/*
+	Theme Name: ما هو اسم القالب؟
+	Theme URI: https://www.elnooronline.com/
+	Author: تم تصميم وتطوير بواسطة شركة النور أون لاين
+	Author URI: https://www.elnooronline.com/
+*/
 /* start part basic */
 @import url(assets/css/helper\ v0.2.css);
 @import url(assets/css/all.min.css);
@@ -451,7 +456,9 @@ transition: 1s;
 }
 /* start pop post  */
 .pop{
-position: absolute;
+position: fixed;
+top: 0;
+left: 0;
 width: 100vw;
 height: 100vh;
 background-color: rgba(0, 0, 0, 0.849);
@@ -1067,6 +1074,26 @@ color: var(--third) !important;
   }
   /* section titile  */
   /* start header  */
+  .dropdown a{
+  position: absolute;
+  right: 0;
+  }
+  .links-head .dropdown-menu{
+  position: relative !important;
+  top: 0px !important;
+right: 0px !important;
+transform:none !important;
+margin-top:  35px !important;
+flex-direction: row;
+flex-wrap: wrap;
+display: flex;
+display: none;
+}
+  .links-head .dropdown-menu  .dropdown-item{
+  width: 50%;
+  padding-right:  20px;
+  margin-bottom: 5px;
+  }
   .page-links {
     display: none !important;
   }
@@ -1114,6 +1141,13 @@ color: var(--third) !important;
     margin-right: 20px;
     transition: 1s all;
   }
+  .page-search input{
+    width: 100%;
+  margin-right: 15%;
+  }
+  .page-search button{
+  margin-right: 10%;
+  }
   /* end header  */
   /* start landing  */
   .landing .text-landing h1 {
@@ -1128,7 +1162,17 @@ color: var(--third) !important;
   }
   /* end landing  */
 /* start news  */
-
+.pop .col p{
+  font-size: 15px;
+margin-top: 20px;
+}
+  .pop .pop-text h5 a,.pop .pop-text h6 a {
+  font-size: 20px;
+}
+.pop img {
+object-fit: cover;
+height: 100%;
+}
 .news .left img{
 height: 300px;
 }
@@ -1215,9 +1259,33 @@ margin-bottom: 30px;
   margin: auto;
 }
 /* end who us */
-
+/* start end  */
+footer ul li{
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  }
 }
 @media (max-width: 500px) {
+  
 }
 @media (max-width: 375px) {
+  .numbers h4 {
+  font-size: 15px;
+  }
+  .numbers h5 {
+    font-size: 12px;
+    }
+  .numbers h5 span{
+  font-size: 20px !important;
+  }
+  .send .btn{
+  margin-right: 10px !important;
+  font-size: 15px !important;
+  }
+  footer ul li{
+    font-size: 15px;
+    margin-left: 5px;
+    padding: 5px ;
+    }
 }
