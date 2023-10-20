@@ -147,6 +147,14 @@ let page_fixed = document.querySelector(".page-links");
 let page_search = document.querySelector(".page-search");
 let fixed_links = document.querySelector(".fixed-links");
 let page_phone =document.querySelector(".page-phone" )
+let drop_button=document.querySelector(".dropdown a")
+let drop_menu=document.querySelector(".dropdown-menu")
+let link_head=document.querySelectorAll(".links-head li")
+if(screen.width<=768){
+  link_head.forEach(li=>{li.onclick=()=>{drop_menu.classList.remove("flex")}})
+ drop_button.onclick=()=>{drop_menu.classList.toggle("flex")}
+}
+
 
 head.onclick = function () {
   window.scrollTo({
@@ -169,6 +177,7 @@ bar.onclick = function () {
     head.classList.add("js-head");
   }
   // remove links hide
+  drop_menu.classList.remove("flex")
   child_links.forEach((item1, index1) => {
     item1.classList.remove("trans0");
     item1.classList.add("trans-100");
@@ -211,6 +220,7 @@ search.onclick = function () {
     bar_icon.classList.remove("fa-close");
     bar.classList.remove("closes");
   }
+
 };
 
 let pop=document.querySelector(".pop")
@@ -445,6 +455,14 @@ $('.slider-nav').slick({
 ////////////////////////
 // start animation scroll
 AOS.init();
+
+let soa =document.querySelectorAll(".aos-phone")
+if(screen.width<= 768){
+soa.forEach(aos=>{aos.dataset.aos="fade-up"})
+}
+else{
+
+}
 // end animation scroll
 //////////////////////////////
 // // start auto type
